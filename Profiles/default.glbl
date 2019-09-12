@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'E:\\Musik bagus\\APK\\app-release (1).apk'</initValue>
+      <name>apkFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'atna_grible@yahoo.com'</initValue>
+      <name>email_fb</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'a'</initValue>
+      <name>pass_fb</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
