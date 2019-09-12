@@ -13,6 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+'Membuka Aplikasi'
 Mobile.startApplication(GlobalVariable.apkFile, false)
 
-Mobile.tap(findTestObject('Object Repository/Menu/Feeds'), 10)
+'Landing page'
+Mobile.takeScreenshot()
+
+if (Mobile.verifyElementNotExist(findTestObject('Object Repository/Menu/Home'), 5, FailureHandling.OPTIONAL))
+{
+	'Login menggunakan gmail'
+	Mobile.tap(findTestObject('Object Repository/Landing Page/Gmail login'), 5)
+	
+	'Memilih email'
+	Mobile.takeScreenshot()
+	
+	'Login memilih email'
+	Mobile.tap(findTestObject('Object Repository/Login With Gmail/Login Gmail'), 5)
+
+	'Berhasil login'
+	Mobile.takeScreenshot()
+}
+
+Mobile.tap(findTestObject('Object Repository/Menu/Feeds'), 5)
